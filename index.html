@@ -128,12 +128,25 @@
                 </div>
                 <div class="project-desc-container col-8">
                     <div class="project-desc">
-                        <p class="text-start">Added the functionality of voice recognition using SpeechRecognition API in javascript. This enables the players to use voice commands to control the movements of the snake in the game. <hr>Technologies used: JavaScript, HTML, CSS, SpeechRecognition API.</p>
+                        <p class="text-start">Added the functionality of voice recognition using SpeechRecognition API in javascript. This enables the players to use voice commands to control the movements of the snake in the game. Technologies used: <u>JavaScript, HTML, CSS, SpeechRecognition API</u>.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row project-item position-relative">
+            <div class="row project-item">
+              <h3 class="text-start">Inventory Management System</h3>
+              <hr>
+              <div class="project-img-container col-4">
+                  <img src="./public/inventory-ss-01.png" alt="project icon" width="100%" height="100%" class="project-icon">
+              </div>
+              <div class="project-desc-container col-8">
+                  <div class="project-desc">
+                      <p class="text-start">This is <strong>full-stack</strong> web application. The application helps vendors to keep track of their stocks and orders they receive. It has functionality to manually add an item to the stock list and also to take order from the customer. The stock page <strong>updates</strong> itself based on incoming and outgoing stock items. Technologies used : <u>JavaScript, HTML, CSS, Node.js, Express.js, MongoDB</u></p>
+                  </div>
+              </div>
+          </div>
+
+            <div class="row project-item">
                 <h3 class="text-start">Tic Tac Toe</h3>
                 <hr>
                 <div class="project-img-container col-4">
@@ -141,7 +154,7 @@
                 </div>
                 <div class="project-desc-container col-8">
                     <div class="project-desc">
-                        <p class="text-start">This is a frontend application. A simple classic tic-tac-toe game implemented using Reactjs. Two players simultaneously can play this game. It displays status messages along with providing information ragarding whose turn to play. Technologies used: JavaScript, HTML, CSS, React.js</p>
+                        <p class="text-start">A simple classic tic-tac-toe game implemented using Reactjs. Two players simultaneously can play this game. It displays status messages along with providing information ragarding whose turn to play. Technologies used: <u>JavaScript, HTML, CSS, React.js</u></p>
                     </div>
                 </div>
             </div>
@@ -154,7 +167,7 @@
                 </div>
                 <div class="project-desc-container col-8">
                     <div class="project-desc">
-                        <p class="text-start">This is a frontend web application. Fetches and shows information about the shows and movies front internet. Users can also star movies for there reference.Utilised API calls to fetch information form tvmaze.com. Technologies used: JavaScript, HTML, CSS, React.js</p>
+                        <p class="text-start">This web application fetches and shows information about the shows and movies front internet. Users can also star movies for there reference.Utilised API calls to fetch information form tvmaze.com. Technologies used: <u>JavaScript, HTML, CSS, React.js</u></p>
                     </div>
                     
                 </div>
@@ -167,26 +180,27 @@
             <span class="section-head">Contact</span>
         </h1>
         <div class="container">
-            <form>
+            <form id="contact-form" method="post" action="send" enctype="multipart/form-data">
                 <div class="mb-3">
                   <label for="inputName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                  <input required name="inputName" type="text" class="form-control" id="inputName" placeholder="Enter your name">
                 </div>
                 <div class="mb-3">
                   <label for="inputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="inputEmail1" placeholder="Enter your email address">
+                  <input required name="inputMail" type="email" class="form-control" id="inputEmail1" placeholder="Enter your email address">
                 </div>
                 <div class="mb-3">
                   <label for="inputMessage" class="form-label">Message</label>
-                  <textarea class="form-control" id="inputMessage" cols="30" rows="10"></textarea>
+                  <textarea required name="inputMsg" class="form-control" id="inputMessage" cols="30" rows="10"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <!-- Submit form -->
+                <button type="submit" value="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>
       </section>
     </div>
 
-    <!-- including bootstrap javascript -->
+    <!-- including javascript -->
     <script src="index.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
   </body>
