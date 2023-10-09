@@ -3,16 +3,6 @@
     --navbar-height: 50px;
 }
 
-.section-head{
-    padding: 5px;
-    text-transform: uppercase;
-}
-
-.home-brand-img{
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
 #navigation-header{
     height: var(--navbar-height);
     width: 100%;
@@ -21,8 +11,24 @@
     overflow: hidden;
 }
 
+.nav-link{
+    color: white !important;
+}
+
+.section-head{
+    padding: 5px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.home-brand-img{
+    border-radius: 50%;
+    margin: 10px;
+}
+
 .home-content-desc{
-    /* left: 50%; */
     max-width: 90rem;
 }
 
@@ -46,10 +52,6 @@ section{
     margin: 2px;
 }
 
-.nav-link{
-    color: white !important;
-}
-
 .home-social-link{
     padding: 5px;
 }
@@ -61,8 +63,6 @@ section{
 .about-head{
     margin-bottom: 5rem;
 }
-
-
 
 .about-content{
     display: grid;
@@ -97,17 +97,7 @@ a:hover{
     color: #93b3f8 !important;
 }
 
-/* #about-skill-item{
-
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1rem;
-
-} */
-
 .project-container{
-    /* background-color: #666; */
-    /* border: 1px solid #b94848; */
     padding: 5px;
 }
 

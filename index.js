@@ -1,15 +1,23 @@
-// // const btnContainer = document.getElementById("nav-list");
+let http = require('http');
+let fs = require('fs');
 
-// // // Get all buttons with class="btn" inside the container
-// // const btns = btnContainer.getElementsByClassName("nav-link");
+let server = http.createServer(function(req, res) {
+    let url = req.url
+    if(url.split("/")[1] === "public"){
+        handlePublic(url, req, res);
+    }else{
+        let html = fs.readFileSync("./index.html");
+        res.setHeader("Content-Type", "text/html");
+        res.statusCode = 200;
+        res.end(html);
+    }
 
-// // for()
+    
+});
 
-// const activePage = window.location.pathname;
-// const navLinks = document.querySelectorAll("nav");
+function handlePublic(url, req, res){
+    let file = fs.readFileSync("./" + url)
+    res.end(file);
+}
 
-// for(let i = 0; i < navLinks.length; i++) {
-//     if(navLinks[i].classList.includes(`${activePage}`)) {
-//         navLinks[i].classList.add("active");
-//     }
-// }
+server.listen(3000);
