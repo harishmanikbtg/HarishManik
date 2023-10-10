@@ -27,7 +27,7 @@ Main features of the portfolio website include:
 - Linking to my social media profiles.
 
 ## Technologies Used
-[List of technologies and tools used to build the portfolio website.
+List of technologies and tools used to build the portfolio website.
 - HTML, CSS, JavaScript for front-end development.
 - GitHub Pages for hosting.
 - Email.js for sendig emails through contact form.
