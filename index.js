@@ -8,7 +8,7 @@ window.onload = function () {
       // these IDs from the previous steps
       emailjs.sendForm("service_hft0lkd", "template_ydc9w3w", this).then(
         function () {
-          console.log("SUCCESS!");
+          alert("Message sent!");
         },
         function (error) {
           console.log("FAILED...", error);
