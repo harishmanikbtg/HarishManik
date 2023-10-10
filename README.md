@@ -1,8 +1,8 @@
 # HarishManik's Portfolio Website
 
-Welcome to my portfolio website hosted on GitHub! This website serves as a showcase of my work, skills, and achievements in the field of [mention your field, e.g., web development, data science, design, etc.].
+Welcome to my portfolio website hosted on GitHub! This website serves as a showcase of my work, skills, and achievements in the field of Software Development.
 
-You can visit the live website here: {link to my website}
+You can visit the live website here: https://harishmanikbtg.github.io/HarishManik/
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ List of technologies and tools used to build the portfolio website.
 
 ## Contact
 
-Please feel free to contact me through my email address: harishbhurebtg@gmail.com or you can send me a message through the contact form in the website.
+Please feel free to contact me through my email address: harishbhurebtg@gmail.com or you can send me a message through the contact form in the website:- https://harishmanikbtg.github.io/HarishManik/#contact
 
 Feel free to explore my portfolio and get in touch if you have any questions or opportunities for collaboration!
 
