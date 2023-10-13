@@ -33,29 +33,44 @@
   <body>
     <nav
       id="navigation-header"
-      class="navbar navbar-expand navbar-dark bg-dark z-1"
+      class="navbar navbar-expand-md navbar-dark bg-dark z-1"
     >
-      <div class="container">
+      <div class="container-fluid">
         <span class="navbar-brand"> Harish Manik </span>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle Navigarion"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <ul id="nav-list" class="navbar-nav">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="nav-list" class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="container bg-light bg-gradient">
+    <div class="container-fluid bg-light bg-gradient">
       <section id="home" class="text-center">
         <!-- Information about me -->
         <div class="home-content">
@@ -109,62 +124,63 @@
         </div>
       </section>
 
-      <section id="about" class="text-center">
+      <section id="about" class="text-center mx-4">
         <h1>
           <span class="section-head">About</span>
         </h1>
-        <div class="about-container">
+
+        <div class="row">
           <div class="about-head">
             <span
               >Find more information about me, my skills and what I do.</span
             >
           </div>
-          <div class="about-content">
-            <div class="about-content-desc text-start">
-              <h3>About</h3>
-              <p class="about-content-desc-p">
-                I specialize in end-to-end website development, prioritizing
-                user experience. From concept to launch, I create intuitive and
-                engaging sites that captivate users. Let's collaborate to bring
-                your digital vision to life.
-              </p>
-              <p class="about-content-desc-p">
-                I am open to job opportunities which allow me utilize my skills
-                to build awsome softwares that cater to a large group of
-                costumers. If you have such an opportunity where I can
-                contribute with my skills please feel free to contact me.
-              </p>
-              <a href="#contact" class="btn btn-primary">Contact Me</a>
-            </div>
-            <div class="about-content-skills">
-              <h3>Skills</h3>
-              <div class="skills-container">
-                <div class="skills-item rounded">C</div>
-                <div class="skills-item rounded">HTML</div>
-                <div class="skills-item rounded">CSS</div>
-                <div class="skills-item rounded">JavaScript</div>
-                <div class="skills-item rounded">React.js</div>
-                <div class="skills-item rounded">Git</div>
-                <div class="skills-item rounded">GitHub</div>
-                <div class="skills-item rounded">PUG view engine</div>
-                <div class="skills-item rounded">SQL</div>
-                <div class="skills-item rounded">MongoDB</div>
-                <div class="skills-item rounded">Express Basics</div>
-              </div>
+
+          <div class="col-sm-6">
+            <h3 class="d-none d-sm-block">About</h3>
+            <p class="about-content-desc-p">
+              I specialize in end-to-end website development, prioritizing user
+              experience. From concept to launch, I create intuitive and
+              engaging sites that captivate users. Let's collaborate to bring
+              your digital vision to life.
+            </p>
+            <p class="about-content-desc-p">
+              I am open to job opportunities which allow me utilize my skills to
+              build awsome softwares that cater to a large group of costumers.
+              If you have such an opportunity where I can contribute with my
+              skills please feel free to contact me.
+            </p>
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+          </div>
+
+          <div class="col-sm-6 mt-5">
+            <h3>Skills</h3>
+            <div class="skills-container">
+              <div class="skills-item rounded">C</div>
+              <div class="skills-item rounded">HTML</div>
+              <div class="skills-item rounded">CSS</div>
+              <div class="skills-item rounded">JavaScript</div>
+              <div class="skills-item rounded">React.js</div>
+              <div class="skills-item rounded">Git</div>
+              <div class="skills-item rounded">GitHub</div>
+              <div class="skills-item rounded">PUG view engine</div>
+              <div class="skills-item rounded">SQL</div>
+              <div class="skills-item rounded">MongoDB</div>
+              <div class="skills-item rounded">Express Basics</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="text-center">
+      <section id="projects" class="text-center mx-4">
         <h1>
           <span class="section-head">Projects</span>
         </h1>
         <div class="project-container">
-          <div class="row project-item">
+          <div class="row">
             <h3 class="text-start">Voice Commands to Snake Game</h3>
             <hr />
-            <div class="project-img-container col-4">
+            <div class="project-img-container col-sm-4">
               <img
                 src="./public/snake-game-icon.png"
                 alt="project icon"
@@ -173,8 +189,8 @@
                 class="project-icon"
               />
             </div>
-            <div class="project-desc-container col-8">
-              <div class="project-desc">
+            <div class="project-desc-container col-sm-8">
+              <div class="h-100 d-flex align-items-sm-center justify-content-sm-center">
                 <p class="text-start">
                   Added the functionality of voice recognition using
                   SpeechRecognition API in javascript. This enables the players
@@ -186,10 +202,10 @@
             </div>
           </div>
 
-          <div class="row project-item">
+          <div class="row">
             <h3 class="text-start">Inventory Management System</h3>
             <hr />
-            <div class="project-img-container col-4">
+            <div class="project-img-container col-sm-4">
               <img
                 src="./public/inventory-ss-01.png"
                 alt="project icon"
@@ -198,8 +214,8 @@
                 class="project-icon"
               />
             </div>
-            <div class="project-desc-container col-8">
-              <div class="project-desc">
+            <div class="project-desc-container col-sm-8">
+              <div class="h-100 d-flex align-items-sm-center justify-content-sm-center">
                 <p class="text-start">
                   This is <strong>full-stack</strong> web application. The
                   application helps vendors to keep track of their stocks and
@@ -213,10 +229,10 @@
             </div>
           </div>
 
-          <div class="row project-item">
+          <div class="row">
             <h3 class="text-start">Tic Tac Toe</h3>
             <hr />
-            <div class="project-img-container col-4">
+            <div class="project-img-container col-sm-4">
               <img
                 src="./public/tic-tac-toe-icon.png"
                 alt="project icon"
@@ -225,8 +241,8 @@
                 class="project-icon"
               />
             </div>
-            <div class="project-desc-container col-8">
-              <div class="project-desc">
+            <div class="project-desc-container col-sm-8">
+              <div class="h-100 d-flex align-items-sm-center justify-content-sm-center">
                 <p class="text-start">
                   A simple classic tic-tac-toe game implemented using Reactjs.
                   Two players simultaneously can play this game. It displays
@@ -238,10 +254,10 @@
             </div>
           </div>
 
-          <div class="row project-item">
+          <div class="row">
             <h3 class="text-start">Box Office App</h3>
             <hr />
-            <div class="project-img-container col-4">
+            <div class="project-img-container col-sm-4">
               <img
                 src="./public/box-office-icon.png"
                 alt="project icon"
@@ -250,8 +266,8 @@
                 class="project-icon"
               />
             </div>
-            <div class="project-desc-container col-8">
-              <div class="project-desc">
+            <div class="project-desc-container col-sm-8">
+              <div class="h-100 d-flex align-items-sm-center justify-content-sm-center">
                 <p class="text-start">
                   This web application fetches and shows information about the
                   shows and movies front internet. Users can also star movies
@@ -265,7 +281,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="mx-4">
         <h1 class="text-center">
           <span class="section-head">Contact</span>
         </h1>
@@ -305,9 +321,11 @@
               ></textarea>
             </div>
 
-            <button type="submit" value="Send" class="btn btn-primary">
-              Submit
-            </button>
+            <div class="text-center">
+              <button type="submit" value="Send" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </section>

@@ -45,7 +45,7 @@ section{
 #socials{
     position: absolute;
     background-color: rgb(241, 241, 241);
-    top: 50%;
+    top: 30%;
     left: 0;
     transform: translateY(-50%);
     width: 40px;
@@ -70,12 +70,6 @@ section{
     grid-gap: 10rem;
 }
 
-.about-content-p{
-    max-width: 60rem;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    line-height: 1.7;
-}
 
 .skills-container{
     display: flex;
@@ -117,7 +111,7 @@ a:hover{
 }
 
 .project-desc{
-    height: 50vh !important;
+    height: 60vh !important;
     display: flex;
     align-items: center;
     justify-content: center;
