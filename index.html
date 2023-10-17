@@ -36,39 +36,37 @@
   <body>
     <nav
       id="navigation-header"
-      class="navbar navbar-expand-md navbar-dark bg-dark z-1"
+      class="navbar navbar-expand-sm text-bg-dark fixed-top  z-1"
     >
       <div class="container-fluid">
-        <span class="navbar-brand"> Harish Manik </span>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle Navigarion"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-brand text-bg-dark"> Harish Manik </span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light rounded-1"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul id="nav-list" class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#home" class="nav-link active" aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close bg-light-subtle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body" id="navbarCollapse">
+            <ul id="nav-list" class="navbar-nav gap-1 justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a href="#home" class="nav-link text-bg-dark rounded-1 px-1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link text-bg-dark rounded-1 px-1">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link text-bg-dark rounded-1 px-1">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link text-bg-dark rounded-1 px-1">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -300,6 +298,7 @@
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
               <input
+                id="name"
                 required
                 type="text"
                 class="form-control"
@@ -308,8 +307,9 @@
               />
             </div>
             <div class="mb-3">
-              <label for="email1" class="form-label">Email address</label>
+              <label for="email" class="form-label">Email address</label>
               <input
+                id="email"
                 required
                 type="email"
                 class="form-control"
@@ -320,6 +320,7 @@
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea
+                id="message"
                 required
                 class="form-control"
                 name="message"
