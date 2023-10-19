@@ -1,6 +1,6 @@
 window.onload = function () {
   document
-    .getElementById("contact-form")
+    .getElementById("contactForm")
     .addEventListener("submit", function (event) {
       event.preventDefault();
       // generate a five digit number for the contact_number variable
@@ -9,6 +9,7 @@ window.onload = function () {
       emailjs.sendForm("service_hft0lkd", "template_ydc9w3w", this).then(
         function () {
           alert("Message sent!");
+          document.getElementById('contactForm').reset();
         },
         function (error) {
           console.log("FAILED...", error);
