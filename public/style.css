@@ -4,9 +4,11 @@
     --light-navbar: #7b8daf;
     --light-color: #000000;
     --light-bg-color: #fafafa;
+    --light-input-bg: #e3e3e3;
     --dark-navbar: #0e0e0e;
     --dark-color: #fafafa;
     --dark-bg-color: #232323;
+    --dark-input-bg: #2c2c2c;
 }
 
 .dark-mode{
@@ -38,6 +40,11 @@
 
     #socials{
         background-color: #292929;
+    }
+
+    #contactForm input,#contactForm textarea{
+        background-color: var(--dark-input-bg);
+        color: var(--dark-color);
     }
 }
 
@@ -72,6 +79,11 @@ body{
 
     #socials{
         background-color: rgb(226, 226, 226);
+    }
+
+    #contactForm input,#contactForm textarea{
+        background-color: var(--light-input-bg);
+        color: var(--light-color);
     }
 }
 
