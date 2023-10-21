@@ -36,34 +36,34 @@
   <body>
     <nav
       id="navigation-header"
-      class="navbar navbar-expand-sm text-bg-dark fixed-top  z-1"
+      class="navbar navbar-expand-sm fixed-top shadow z-1"
     >
       <div class="container-fluid">
-        <span class="navbar-brand text-bg-dark"> Harish Manik </span>
+        <span class="navbar-brand"> Harish Manik </span>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon bg-light rounded-1"></span>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end rounded" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close bg-light-subtle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
 
           <div class="offcanvas-body" id="navbarCollapse">
-            <ul id="nav-list" class="navbar-nav gap-1 justify-content-end flex-grow-1 pe-3">
+            <ul id="nav-list" class="navbar-nav gap-1 justify-content-end flex-grow-1">
               <li class="nav-item">
-                <a href="#home" class="nav-link text-bg-dark rounded-1 px-1">Home</a>
+                <a href="#home" class="nav-link rounded-1 px-1">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link text-bg-dark rounded-1 px-1">About</a>
+                <a href="#about" class="nav-link rounded-1 px-1">About</a>
               </li>
               <li class="nav-item">
-                <a href="#projects" class="nav-link text-bg-dark rounded-1 px-1">Projects</a>
+                <a href="#projects" class="nav-link rounded-1 px-1">Projects</a>
               </li>
               <li class="nav-item">
-                <a href="#contact" class="nav-link text-bg-dark rounded-1 px-1">Contact</a>
+                <a href="#contact" class="nav-link rounded-1 px-1">Contact</a>
               </li>
             </ul>
           </div>
@@ -71,7 +71,15 @@
       </div>
     </nav>
 
-    <div class="container-fluid bg-light bg-gradient">
+    <div class="container-fluid">
+      <!-- theme toggle button -->
+      <button class="theme-toggle border-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-highlights" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0Zm-8 5v1H4.5a.502.502 0 0 0-.093.009A7.029 7.029 0 0 1 3.1 13H8Zm0-1H2.255a6.998 6.998 0 0 1-.581-1H8v1Zm-6.71-2a6.96 6.96 0 0 1-.22-1H8v1H1.29ZM1 8c0-.34.024-.673.07-1H8v1H1Zm.29-2c.103-.345.231-.68.384-1H8v1H1.29Zm.965-2c.25-.36.534-.694.846-1H8v1H2.255Zm2.137-2A6.967 6.967 0 0 1 8 1v1H4.392Z"/>
+        </svg>
+      </button>
+
+
       <section id="home" class="text-center">
         <!-- Information about me -->
         <div class="home-content">

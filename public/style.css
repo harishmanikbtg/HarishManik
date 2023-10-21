@@ -1,6 +1,78 @@
 
 :root{
     --navbar-height: 50px;
+    --light-navbar: #7b8daf;
+    --light-color: #000000;
+    --light-bg-color: #fafafa;
+    --dark-navbar: #0e0e0e;
+    --dark-color: #fafafa;
+    --dark-bg-color: #232323;
+}
+
+.dark-mode{
+    color: var(--dark-color);
+    background-color: var(--dark-bg-color);
+
+    >#navigation-header{
+        background-color: var(--dark-navbar);
+        color: var(--light-color);
+
+        .navbar-brand, .nav-link{
+            color: var(--dark-color);
+        }
+    }
+    .offcanvas{
+        background-color: var(--dark-bg-color);
+        color: var(--dark-color);
+    }
+
+    .navbar-toggler{
+        background-color: var(--dark-navbar);
+        color: var(--dark-color);
+    }
+
+    .theme-toggle{
+        background-color: var(--dark-bg-color);
+        color: var(--dark-color);
+    }
+
+    #socials{
+        background-color: #292929;
+    }
+}
+
+body{
+    background-color: var(--light-bg-color);
+    color: var(--light-color);
+
+    #navigation-header{
+        background-color: var(--light-navbar);
+        color: var(--light-color);
+
+        .navbar-brand, .nav-link{
+            color: var(--light-color);
+        }
+    }
+
+    .offcanvas{
+        background-color: var(--light-bg-color);
+        color: var(--light-color);
+    }
+
+    .navbar-toggler{
+        background-color: var(--light-navbar);
+        color: var(--light-color);
+    }
+    
+    .theme-toggle{
+        background-color: var(--light-bg-color);
+        color: var(--light-color);
+        border-radius: 50%;
+    }
+
+    #socials{
+        background-color: rgb(226, 226, 226);
+    }
 }
 
 #navigation-header{
@@ -11,8 +83,18 @@
     overflow: hidden;
 }
 
-.nav-link{
-    color: white !important;
+a:hover{
+    font-size: large !important;
+    color: #41fe2f !important;
+}
+
+.theme-toggle{
+    cursor: pointer;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 40px;
+    object-fit: fill;
 }
 
 .section-head{
@@ -44,7 +126,6 @@ section{
 
 #socials{
     position: absolute;
-    background-color: rgb(241, 241, 241);
     top: 30%;
     left: 0;
     transform: translateY(-50%);
@@ -64,13 +145,6 @@ section{
     margin-bottom: 5rem;
 }
 
-.about-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
-}
-
-
 .skills-container{
     display: flex;
     flex-wrap: wrap;
@@ -79,16 +153,10 @@ section{
 .skills-item{
     padding: 10px 15px;
     font-weight: 600;
-    color: #474747;
+    color: #393939;
     margin-bottom: 10px;
     margin-right: 1.5rem;
-    /* font-size: 1.2r; */
-    background: rgba(214, 219, 224, 0.778);
-}
-
-a:hover{
-    font-size: large !important;
-    color: #93b3f8 !important;
+    background: #cdd8ee;
 }
 
 .project-container{
